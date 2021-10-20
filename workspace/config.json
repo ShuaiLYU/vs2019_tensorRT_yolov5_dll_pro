@@ -1,0 +1,10 @@
+{
+	"MODEL_NAME": "best",
+	"INFER_TYPE": "FP16",
+	"BATCH_SIZE" : 16,
+	"OBJ_THRESHOLD": 0.4,
+	"NMS_THRESHOLD" : 0.5,
+	"WORK_SPACE" : "F:/baiduYUN/tensorRT_yolov5_demo-v1/workspace/",
+	"MODE_DEBUG" : false,
+	"DEVICE_ID" : 0
+}

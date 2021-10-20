@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{441d8a0c-8b79-4ed8-95fc-c2db08b99557}</ProjectGuid>
+    <RootNamespace>alogrithmInterface</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <CudaToolkitCustomDir>D:\libs\lean\cuda10.1</CudaToolkitCustomDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="D:\libs\lean\cuda10.1\extras\visual_studio_integration\MSBuildExtensions\CUDA 10.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir);$(SolutionDir)TensorRT/src/tensorRT;$(SolutionDir)TensorRT/src/application;$(SolutionDir)TensorRT/src/tensorRT/common;$(lean_lib)/opencv3.4.6/include;$(lean_lib)/protobuf3.11.4/include;$(lean_lib)/TensorRT-8.0.1.6/include;$(lean_lib)/cudnn8.2.2.26;$(lean_lib)/cuda10.1/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(lean_lib)/cuda10.1/lib/x64;$(lean_lib)/cudnn8.2.2.26;$(lean_lib)/protobuf3.11.4/lib;$(lean_lib)/opencv3.4.6/lib;$(lean_lib)/TensorRT-8.0.1.6/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ALOGRITHMINTERFACE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ALOGRITHMINTERFACE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ALOGRITHMINTERFACE_EXPORTS;_WINDOWS;_USRDLL;MATUREAPPROACH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_75,sm_75</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ALOGRITHMINTERFACE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TensorRT\src\application\app_yolo.hpp" />
+    <ClInclude Include="..\TensorRT\src\application\app_yolo\yolo.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\builder\trt_builder.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\cuda_tools.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\ilogger.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\infer_controller.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\json.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\monopoly_allocator.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\preprocess_kernel.cuh" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\trt_tensor.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\infer\trt_infer.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnxplugin\onnxplugin.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnxplugin\plugin_binary_io.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx-ml.pb.h" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx-operators-ml.pb.h" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnxifi.h" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx_pb.h" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\builtin_op_importers.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ImporterContext.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\LoopHelpers.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ModelImporter.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\NvOnnxParser.h" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_common.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_runtime.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_utils.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\OnnxAttrs.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnxErrorRecorder.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx_utils.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\RNNHelpers.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ShapedWeights.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ShapeTensor.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\Status.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\TensorOrWeights.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\toposort.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\trt_utils.hpp" />
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\utils.hpp" />
+    <ClInclude Include="algorithmInterface.h" />
+    <ClInclude Include="defectInfos.h" />
+    <ClInclude Include="FDAlgorithmImplement.h" />
+    <ClInclude Include="framework.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\TensorRT\src\application\app_yolo.cpp" />
+    <ClCompile Include="..\TensorRT\src\application\app_yolo\yolo.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\builder\trt_builder.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\cuda_tools.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\ilogger.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\json.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\trt_tensor.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\import_lib.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\infer\trt_infer.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnxplugin\onnxplugin.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugin_binary_io.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx\onnx-ml.pb.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx\onnx-operators-ml.pb.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\builtin_op_importers.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\LoopHelpers.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ModelImporter.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\NvOnnxParser.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_utils.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\OnnxAttrs.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\onnxErrorRecorder.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\RNNHelpers.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ShapedWeights.cpp" />
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ShapeTensor.cpp" />
+    <ClCompile Include="algorithInferface.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="FDAlgorithmImplement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\TensorRT\src\application\app_yolo\yolo_decode.cu" />
+    <CudaCompile Include="..\TensorRT\src\tensorRT\common\preprocess_kernel.cu" />
+    <CudaCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugins\DCNv2.cu" />
+    <CudaCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugins\HSwish.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\TensorRT\src\tensorRT\onnx_parser\readme.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="D:\libs\lean\cuda10.1\extras\visual_studio_integration\MSBuildExtensions\CUDA 10.1.targets" />
+  </ImportGroup>
+</Project>

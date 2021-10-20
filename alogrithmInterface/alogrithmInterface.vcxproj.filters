@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{fd6f95f4-05c6-4b18-af21-8cdfd1321f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\application">
+      <UniqueIdentifier>{49e41cc8-45db-47fe-998b-8996cac03886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\application\app_yolo">
+      <UniqueIdentifier>{1a93cd50-9b60-4711-8f06-ca6338977b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT">
+      <UniqueIdentifier>{ce2fd217-af6b-4220-9088-db4521ac9efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\builder">
+      <UniqueIdentifier>{a0b923f3-5841-45cf-b60a-d270052a1266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\common">
+      <UniqueIdentifier>{6d8272dc-1664-442b-b016-cdfe36b317f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\infer">
+      <UniqueIdentifier>{c300c1da-117c-430c-9b78-f27429ff31e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\onnx">
+      <UniqueIdentifier>{35ccaab1-488d-420c-b7c8-04618e1b56ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\onnx_parser">
+      <UniqueIdentifier>{89b010a0-f0e6-4918-9448-6a824bd7bd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\onnxplugin">
+      <UniqueIdentifier>{2c1062b3-0cb0-47b2-a3f2-917dff8a77ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tensorRT\onnxplugin\plugins">
+      <UniqueIdentifier>{77ba9944-9a7f-4f22-ad54-c80a90096a9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithmInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FDAlgorithmImplement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="defectInfos.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\application\app_yolo.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\application\app_yolo\yolo.hpp">
+      <Filter>src\application\app_yolo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\builder\trt_builder.hpp">
+      <Filter>src\tensorRT\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\ilogger.hpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\infer_controller.hpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\json.hpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\monopoly_allocator.hpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\preprocess_kernel.cuh">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\trt_tensor.hpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\infer\trt_infer.hpp">
+      <Filter>src\tensorRT\infer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx-ml.pb.h">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx-operators-ml.pb.h">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnxifi.h">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx\onnx_pb.h">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\builtin_op_importers.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ImporterContext.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\LoopHelpers.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ModelImporter.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\NvOnnxParser.h">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_common.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_runtime.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_utils.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\OnnxAttrs.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnxErrorRecorder.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\onnx_utils.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\RNNHelpers.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ShapedWeights.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\ShapeTensor.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\Status.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\TensorOrWeights.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\toposort.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\trt_utils.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnx_parser\utils.hpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnxplugin\onnxplugin.hpp">
+      <Filter>src\tensorRT\onnxplugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\onnxplugin\plugin_binary_io.hpp">
+      <Filter>src\tensorRT\onnxplugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TensorRT\src\tensorRT\common\cuda_tools.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithInferface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FDAlgorithmImplement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\application\app_yolo.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\application\app_yolo\yolo.cpp">
+      <Filter>src\application\app_yolo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\import_lib.cpp">
+      <Filter>src\tensorRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\builder\trt_builder.cpp">
+      <Filter>src\tensorRT\builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\cuda_tools.cpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\ilogger.cpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\json.cpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\common\trt_tensor.cpp">
+      <Filter>src\tensorRT\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\infer\trt_infer.cpp">
+      <Filter>src\tensorRT\infer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx\onnx-ml.pb.cpp">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx\onnx-operators-ml.pb.cpp">
+      <Filter>src\tensorRT\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\builtin_op_importers.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\LoopHelpers.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ModelImporter.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\NvOnnxParser.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\onnx2trt_utils.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\OnnxAttrs.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\onnxErrorRecorder.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\RNNHelpers.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ShapedWeights.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnx_parser\ShapeTensor.cpp">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnxplugin\onnxplugin.cpp">
+      <Filter>src\tensorRT\onnxplugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugin_binary_io.cpp">
+      <Filter>src\tensorRT\onnxplugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\TensorRT\src\application\app_yolo\yolo_decode.cu">
+      <Filter>src\application\app_yolo</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\TensorRT\src\tensorRT\common\preprocess_kernel.cu">
+      <Filter>src\tensorRT\common</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugins\DCNv2.cu">
+      <Filter>src\tensorRT\onnxplugin\plugins</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\TensorRT\src\tensorRT\onnxplugin\plugins\HSwish.cu">
+      <Filter>src\tensorRT\onnxplugin\plugins</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\TensorRT\src\tensorRT\onnx_parser\readme.md">
+      <Filter>src\tensorRT\onnx_parser</Filter>
+    </None>
+  </ItemGroup>
+</Project>

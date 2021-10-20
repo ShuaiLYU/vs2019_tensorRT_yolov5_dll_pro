@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TensorRT", "TensorRT\TensorRT.vcxproj", "{FBF775F5-DAB4-4BC1-97A9-D36301073438}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCAppYolov5", "MFCAppYolov5\MFCAppYolov5.vcxproj", "{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alogrithmInterface", "alogrithmInterface\alogrithmInterface.vcxproj", "{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Python|x64 = Python|x64
+		Python|x86 = Python|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Debug|x64.ActiveCfg = Debug|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Debug|x64.Build.0 = Debug|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Debug|x86.ActiveCfg = Debug|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Python|x64.ActiveCfg = Python|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Python|x64.Build.0 = Python|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Python|x86.ActiveCfg = Python|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Release|x64.ActiveCfg = Release|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Release|x64.Build.0 = Release|x64
+		{FBF775F5-DAB4-4BC1-97A9-D36301073438}.Release|x86.ActiveCfg = Release|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Debug|x64.ActiveCfg = Debug|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Debug|x64.Build.0 = Debug|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Debug|x86.Build.0 = Debug|Win32
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Python|x64.ActiveCfg = Debug|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Python|x64.Build.0 = Debug|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Python|x86.ActiveCfg = Debug|Win32
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Python|x86.Build.0 = Debug|Win32
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Release|x64.ActiveCfg = Release|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Release|x64.Build.0 = Release|x64
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Release|x86.ActiveCfg = Release|Win32
+		{E45BF28D-FC1D-4463-95B4-47523C0AF4F4}.Release|x86.Build.0 = Release|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Debug|x64.ActiveCfg = Debug|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Debug|x64.Build.0 = Debug|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Debug|x86.ActiveCfg = Debug|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Debug|x86.Build.0 = Debug|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Python|x64.ActiveCfg = Debug|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Python|x64.Build.0 = Debug|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Python|x86.ActiveCfg = Debug|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Python|x86.Build.0 = Debug|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Release|x64.ActiveCfg = Release|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Release|x64.Build.0 = Release|x64
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Release|x86.ActiveCfg = Release|Win32
+		{441D8A0C-8B79-4ED8-95FC-C2DB08B99557}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D08EE6D2-25C6-46E1-A1E1-7532D7EF678F}
+	EndGlobalSection
+EndGlobal
